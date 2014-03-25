@@ -2523,7 +2523,7 @@ int Renderer11::getMaxViewportDimension() const
 #if defined(ANGLE_PLATFORM_WINRT)
       case D3D_FEATURE_LEVEL_9_3:
       case D3D_FEATURE_LEVEL_9_2:
-      case D3D_FEATURE_LEVEL_9_1: return D3D_FL9_1_REQ_TEXTURE2D_U_OR_V_DIMENSION;
+      case D3D_FEATURE_LEVEL_9_1: return D3D11_VIEWPORT_BOUNDS_MAX;
 #endif // #if defined(ANGLE_PLATFORM_WINRT)
       default: UNREACHABLE();      
         return 0;
